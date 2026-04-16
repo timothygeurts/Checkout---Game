@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bam7jc3xkadlo"]
+
+[node name="Node3D" type="Node3D" unique_id=1499536198]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2034323951]
