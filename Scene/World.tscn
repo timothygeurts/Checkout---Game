@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://duq4apms1d18i"]
 
-[ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://player.gd" id="1_c6gwx"]
-[ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Game Map (2).png" id="2_2dftf"]
-[ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Train Ticket.glb" id="3_bcbcq"]
+[ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://Scripts/player.gd" id="1_3vc68"]
+[ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
+[ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="3_gx810"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -34,7 +34,7 @@ light_energy = 0.683
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=401440808]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.650795, 30.327087, -15.905633)
-script = ExtResource("1_c6gwx")
+script = ExtResource("1_3vc68")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=498875477]
 mesh = SubResource("CapsuleMesh_2dftf")
@@ -63,7 +63,7 @@ material = SubResource("StandardMaterial3D_2dftf")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=105258495]
 transform = Transform3D(-1.5224981e-07, 3.6651003, 4.3711392e-08, 0, -1.6020664e-07, 1.0000001, 3.4830692, 1.6020664e-07, 1.9106857e-15, -39.39769, 27.745144, -9.725426)
-texture = ExtResource("2_2dftf")
+texture = ExtResource("2_njlop")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=795839728]
 transform = Transform3D(-2.4605722, 0, 8.742278e-08, 0, 1, 0, -2.1511006e-07, 0, -1, -42.97062, 28.02827, 9.783882)
@@ -143,5 +143,5 @@ use_collision = true
 size = Vector3(28.493238, 1.0679321, 12.429321)
 material = SubResource("StandardMaterial3D_c6gwx")
 
-[node name="Train Ticket" parent="." unique_id=1164833869 instance=ExtResource("3_bcbcq")]
+[node name="Train Ticket" parent="." unique_id=665405686 instance=ExtResource("3_gx810")]
 transform = Transform3D(0.70133734, 0, 0, 0, 1, 0, 0, 0, 0.66588485, -68.36841, 29.439005, -21.097235)
