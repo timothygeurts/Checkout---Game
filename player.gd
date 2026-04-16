@@ -6,7 +6,7 @@ const JUMP_VELOCITY = 5.0
 
 var look_dir: Vector2
 @onready var camera = $Head/Camera3D
-var camera_sens = 15
+var camera_sens = 8
 
 var capMouse = false
 

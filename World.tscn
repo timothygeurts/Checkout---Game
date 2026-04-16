@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://player.gd" id="1_c6gwx"]
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Game Map (2).png" id="2_2dftf"]
+[ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Train Ticket.glb" id="3_bcbcq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -36,111 +37,111 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.650795, 30.327087, -15.90
 script = ExtResource("1_c6gwx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=498875477]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -28.077957, -2.3593388)
 mesh = SubResource("CapsuleMesh_2dftf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1059686094]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -28.03574, -2.3593388)
 shape = SubResource("CapsuleShape3D_bcbcq")
 
 [node name="Head" type="Node3D" parent="Player" unique_id=1490654281]
-transform = Transform3D(0.2, 0, 0, 0, 0.007319946, 0, 0, 0, 0.05223428, -0.18154144, -26.635185, -2.09093)
+transform = Transform3D(0.2, 0, 0, 0, 0.007319946, 0, 0, 0, 0.05223428, 0, 0.6404438, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=1913853018]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -148.78284, -12.321266)
+transform = Transform3D(4.9999995, 0, 0, 0, 136.61304, 0, 0, 0, 19.144514, 0, -39.69629, -11.412689)
 fov = 90.0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=59049706]
-transform = Transform3D(2.4605722, 0, 0, 0, 1, 0, 0, 0, 1, -42.97062, 0.6874423, -17.043447)
+transform = Transform3D(2.4605722, 0, 0, 0, 1, 0, 0, 0, 1, -42.97062, 28.02827, -17.043447)
 use_collision = true
 size = Vector3(33.4962, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=2016062392]
-transform = Transform3D(2.4605722, 0, 0, 0, 1, 0, 0, 0, 1, -42.97062, 0.6874423, -10.703566)
+transform = Transform3D(2.4605722, 0, 0, 0, 1, 0, 0, 0, 1, -42.97062, 28.02827, -10.703566)
 use_collision = true
 size = Vector3(33.4962, 1.0679321, 1.0288696)
 material = SubResource("StandardMaterial3D_2dftf")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=105258495]
-transform = Transform3D(-1.5224981e-07, 3.6651003, 4.3711392e-08, 0, -1.6020664e-07, 1.0000001, 3.4830692, 1.6020664e-07, 1.9106857e-15, -39.39769, 0.4043169, -9.725426)
+transform = Transform3D(-1.5224981e-07, 3.6651003, 4.3711392e-08, 0, -1.6020664e-07, 1.0000001, 3.4830692, 1.6020664e-07, 1.9106857e-15, -39.39769, 27.745144, -9.725426)
 texture = ExtResource("2_2dftf")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=795839728]
-transform = Transform3D(-2.4605722, 0, 8.742278e-08, 0, 1, 0, -2.1511006e-07, 0, -1, -42.97062, 0.6874423, 9.783882)
+transform = Transform3D(-2.4605722, 0, 8.742278e-08, 0, 1, 0, -2.1511006e-07, 0, -1, -42.97062, 28.02827, 9.783882)
 use_collision = true
 size = Vector3(33.4962, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=986231852]
-transform = Transform3D(-2.4605722, 0, 8.742278e-08, 0, 1, 0, -2.1511006e-07, 0, -1, -42.97062, 0.6874423, 3.4440002)
+transform = Transform3D(-2.4605722, 0, 8.742278e-08, 0, 1, 0, -2.1511006e-07, 0, -1, -42.97062, 28.02827, 3.4440002)
 use_collision = true
 size = Vector3(33.4962, 1.0679321, 1.0288696)
 material = SubResource("StandardMaterial3D_2dftf")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=1256716753]
-transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -34.96048, 0.6874423, -22.977951)
+transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -34.96048, 28.02827, -22.977951)
 use_collision = true
 size = Vector3(26.985405, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1026403511]
-transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -43.62281, 0.6874423, 15.587578)
+transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -43.62281, 28.02827, 15.587578)
 use_collision = true
 size = Vector3(34.026314, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=264106332]
-transform = Transform3D(2.4605725, 0, 0, 0, 0.23648942, -1.17683835e-14, 0, 0, 3.312505, -42.97062, 5.5216026, -17.831728)
-visible = false
+transform = Transform3D(2.4605725, 0, 0, 0, 0.23648942, -1.17683835e-14, 0, 0, 3.312505, -42.97062, 32.86243, -17.831728)
 use_collision = true
 size = Vector3(33.4962, 1.0679321, 20.299133)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=1264996848]
-transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -71.58752, 0.6874423, -28.587349)
+transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -71.58752, 28.02827, -28.587349)
 use_collision = true
 size = Vector3(26.663235, 1.0679321, 12.429321)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="." unique_id=1506732095]
-transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -71.57812, 0.6874423, -34.904324)
+transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -71.57812, 28.02827, -34.904324)
 use_collision = true
 size = Vector3(10.243473, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="." unique_id=1367012120]
-transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -78.56463, 0.6874423, -22.977951)
+transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -78.56463, 28.02827, -22.977951)
 use_collision = true
 size = Vector3(5.6111484, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=599761660]
-transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -56.162724, 0.6874423, -35.1202)
+transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -56.162724, 28.02827, -35.1202)
 use_collision = true
 size = Vector3(6.1022434, 1.0679321, 25.495026)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="." unique_id=859764047]
-transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -37.983093, 0.6874423, -34.904324)
+transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -37.983093, 28.02827, -34.904324)
 use_collision = true
 size = Vector3(12.453005, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=1705354025]
-transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -59.078487, 0.6874423, -41.323112)
+transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -59.078487, 28.02827, -41.323112)
 use_collision = true
 size = Vector3(5.3230486, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=182041011]
-transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -53.417595, 0.6874423, -41.324795)
+transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -53.417595, 28.02827, -41.324795)
 use_collision = true
 size = Vector3(5.3216805, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="." unique_id=407540338]
-transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -39.851624, 0.6874423, -28.587349)
+transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -39.851624, 28.02827, -28.587349)
 use_collision = true
 size = Vector3(28.493238, 1.0679321, 12.429321)
 material = SubResource("StandardMaterial3D_c6gwx")
+
+[node name="Train Ticket" parent="." unique_id=1164833869 instance=ExtResource("3_bcbcq")]
+transform = Transform3D(0.70133734, 0, 0, 0, 1, 0, 0, 0, 0.66588485, -68.36841, 29.439005, -21.097235)
