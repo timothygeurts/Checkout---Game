@@ -91,9 +91,9 @@ size = Vector3(33.4962, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=264106332]
-transform = Transform3D(2.4605725, 0, 0, 0, 0.23648942, -1.17683835e-14, 0, 0, 3.312505, -42.97062, 5.5216026, -11.647165)
+transform = Transform3D(2.4605725, 0, 0, 0, 0.23648942, -1.17683835e-14, 0, 0, 3.312505, -42.97062, 5.5216026, -17.831728)
 use_collision = true
-size = Vector3(33.4962, 1.0679321, 16.565063)
+size = Vector3(33.4962, 1.0679321, 20.299133)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=1264996848]
@@ -115,13 +115,25 @@ size = Vector3(5.6111484, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=599761660]
-transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -56.162724, 0.6874423, -29.750526)
+transform = Transform3D(0.94488984, 0, 0, 0, 1, 0, 0, 0, 1, -56.162724, 0.6874423, -35.1202)
 use_collision = true
-size = Vector3(6.1022434, 1.0679321, 14.755676)
+size = Vector3(6.1022434, 1.0679321, 25.495026)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="." unique_id=859764047]
 transform = Transform3D(2.4605722, 0, 0, 0, -1.033728e-08, 0.99999994, 0, -0.23648942, -4.3711385e-08, -39.900753, 0.6874423, -34.904324)
 use_collision = true
 size = Vector3(10.894295, 1.0679321, 11.761963)
+material = SubResource("StandardMaterial3D_c6gwx")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=1705354025]
+transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -59.078487, 0.6874423, -41.323112)
+use_collision = true
+size = Vector3(5.3230486, 1.0679321, 11.761963)
+material = SubResource("StandardMaterial3D_c6gwx")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=182041011]
+transform = Transform3D(-1.0755504e-07, -0.23648944, -4.3711385e-08, 0, -1.03372795e-08, 0.99999994, -2.4605722, 1.033728e-08, -1.6420282e-15, -53.417595, 0.6874423, -41.324795)
+use_collision = true
+size = Vector3(5.3216805, 1.0679321, 11.761963)
 material = SubResource("StandardMaterial3D_c6gwx")
