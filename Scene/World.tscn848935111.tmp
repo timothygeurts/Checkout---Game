@@ -33,7 +33,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34069872, -2.3593388)
 light_energy = 0.683
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=401440808]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.650795, 29.327087, -15.905633)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.650795, 30.327087, -15.905633)
 script = ExtResource("1_3vc68")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=498875477]
