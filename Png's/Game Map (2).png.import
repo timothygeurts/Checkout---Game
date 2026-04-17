@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byki0pwchcw4o"
-path.s3tc="res://.godot/imported/Train Ticket_Material Base Color.png-7c3e5c32b3c34c76f53ba2a04857ceae.s3tc.ctex"
+uid="uid://buag77nh2uaye"
+path.s3tc="res://.godot/imported/Game Map (2).png-40351c570a61ff66d9fef6c712c2869b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "574d62f502860dfd0a8863f0ce2d9ee0"
-}
 
 [deps]
 
-source_file="res://Train Ticket_Material Base Color.png"
-dest_files=["res://.godot/imported/Train Ticket_Material Base Color.png-7c3e5c32b3c34c76f53ba2a04857ceae.s3tc.ctex"]
+source_file="res://Png's/Game Map (2).png"
+dest_files=["res://.godot/imported/Game Map (2).png-40351c570a61ff66d9fef6c712c2869b.s3tc.ctex"]
 
 [params]
 
