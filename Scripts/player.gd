@@ -4,7 +4,7 @@ extends CharacterBody3D
 #  Bewegingssnelheden
 # ─────────────────────────────────────────────
 const SPEED         = 4.0   # Normale loopsnelheid
-const SPRINT_SPEED  = 6.0   # Sprintsnelheid
+const SPRINT_SPEED  = 7.0   # Sprintsnelheid
 const CROUCH_SPEED  = 2.0   # Loopsnelheid tijdens crouchen
 const JUMP_VELOCITY = 3.0   # Sprongkracht
 
@@ -14,6 +14,22 @@ const JUMP_VELOCITY = 3.0   # Sprongkracht
 var look_dir: Vector2
 @onready var camera = $Head/Camera3D
 var camera_sens = 20
+
+# ─────────────────────────────────────────────
+#  Head bob instellingen
+# ─────────────────────────────────────────────
+# Hoe snel de bob-cyclus draait per staat
+const BOB_FREQ_WALK   = 5.0   # Frequentie tijdens lopen
+const BOB_FREQ_SPRINT = 8.2   # Frequentie tijdens sprinten (sneller)
+const BOB_FREQ_CROUCH = 3.2   # Frequentie tijdens crouchen (langzamer)
+
+# Hoe groot de uitwijking is (amplitude) per as
+const BOB_AMP_Y = 0.1   # Op/neer beweging
+const BOB_AMP_X = 0.2   # Links/rechts beweging (geeft een natuurlijke zwaai)
+
+var _bob_time := 0.0                      # Bijgehouden tijd voor de sinus-berekening
+var _velocity_before_slide := Vector3.ZERO  # Velocity vóór move_and_slide voor de bob check
+
 
 # ─────────────────────────────────────────────
 #  Crouch instellingen
@@ -30,7 +46,7 @@ const HEAD_CROUCH_Y = 0.2   # Positie van $Head bij crouchen
 #  Overige staat
 # ─────────────────────────────────────────────
 var capMouse = false
-var _is_crouching := false  # Of de speler momenteel aan het crouchen is
+var _is_crouching := false   # Of de speler momenteel aan het crouchen is
 
 
 func _physics_process(delta: float) -> void:
@@ -77,8 +93,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
 		velocity.z = move_toward(velocity.z, 0, current_speed)
 
+	# Sla de velocity op vóór move_and_slide — daarna kan het naar nul zijn afgerond
+	_velocity_before_slide = velocity
+
 	move_and_slide()
 	_rotate_camera(delta)
+	_update_head_bob(delta)
 
 
 func _input(event: InputEvent):
@@ -99,6 +119,42 @@ func _rotate_camera(delta: float, sens_mod: float = 1.0):
 
 	# Reset look_dir zodat de beweging niet blijft doorlopen
 	look_dir = Vector2.ZERO
+
+
+# ─────────────────────────────────────────────
+#  Head bob
+# ─────────────────────────────────────────────
+func _update_head_bob(delta: float) -> void:
+	# Gebruik de velocity van vóór move_and_slide, anders is het al nul afgerond
+	var is_moving := _velocity_before_slide.length() > 0.1 and is_on_floor()
+
+	if is_moving:
+		# Kies de juiste frequentie op basis van de huidige staat
+		var freq: float
+		if _is_crouching:
+			freq = BOB_FREQ_CROUCH
+		elif Input.is_action_pressed("sprint"):
+			freq = BOB_FREQ_SPRINT
+		else:
+			freq = BOB_FREQ_WALK
+
+		# Laat de bob-timer oplopen
+		_bob_time += delta * freq
+
+		# Bob de $Head node zodat camera rotatie hier volledig buiten blijft
+		# Y-as: op/neer beweging gesynchroniseerd met de stappencyclus
+		# X-as: lichte zijwaartse zwaai voor een natuurlijk loopgevoel
+		var bob_y := sin(_bob_time * 2.0) * BOB_AMP_Y
+		var bob_x := cos(_bob_time) * BOB_AMP_X
+		var target_y := HEAD_CROUCH_Y if _is_crouching else HEAD_STAND_Y
+		head.position.y = target_y + bob_y
+		head.position.x = bob_x
+	else:
+		# Geen beweging: schuif de head soepel terug naar de rustpositie
+		_bob_time = 0.0
+		var target_y := HEAD_CROUCH_Y if _is_crouching else HEAD_STAND_Y
+		head.position.x = lerp(head.position.x, 0.0, delta * 6.0)
+		head.position.y = lerp(head.position.y, target_y, delta * 6.0)
 
 
 # ─────────────────────────────────────────────
