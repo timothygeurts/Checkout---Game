@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://Scripts/player.gd" id="1_3vc68"]
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
 [ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="3_gx810"]
+[ext_resource type="PackedScene" uid="uid://cxolxsnyi6o3y" path="res://Assets/Cola Can.glb" id="4_fyj18"]
+[ext_resource type="PackedScene" uid="uid://b6701c8qrt3nm" path="res://Assets/Suitcase Brown.glb" id="5_3sajw"]
+[ext_resource type="PackedScene" uid="uid://drb5f2vkgrdtt" path="res://Assets/Hiding Locker.glb" id="6_hddgy"]
+[ext_resource type="PackedScene" uid="uid://dpuk7xyaoiwxr" path="res://Assets/Normal Locker.glb" id="7_g3u1b"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -145,3 +149,21 @@ material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="Train Ticket" parent="." unique_id=216197042 instance=ExtResource("3_gx810")]
 transform = Transform3D(0.701337, 0, 0, 0, 1, 0, 0, 0, 0.665885, -68.3684, 29.439, -21.0972)
+
+[node name="Cola Can2" parent="." unique_id=2079960677 instance=ExtResource("4_fyj18")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -53.805637, 28.669863, -38.32754)
+
+[node name="Cola Can" parent="." unique_id=1009636776 instance=ExtResource("4_fyj18")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -72.15772, 28.66898, -21.894232)
+
+[node name="Cola Can3" parent="." unique_id=1881753395 instance=ExtResource("4_fyj18")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -30.297434, 28.669863, 13.897677)
+
+[node name="Suitcase Brown" parent="." unique_id=1875654353 instance=ExtResource("5_3sajw")]
+transform = Transform3D(-1.6135338e-08, -0.3691335, -0.3372543, 0.5, -2.1855694e-08, 0, -1.4741853e-08, -0.3372543, 0.3691335, -73.538895, 28.630884, -21.421719)
+
+[node name="Hiding Locker" parent="." unique_id=433956562 instance=ExtResource("6_hddgy")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -67.32502, 28.488066, -22.399666)
+
+[node name="Normal Locker" parent="." unique_id=918158911 instance=ExtResource("7_g3u1b")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -66.3458, 28.500965, -22.399328)
