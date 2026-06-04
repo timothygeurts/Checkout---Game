@@ -141,3 +141,20 @@ func CanStandUp() -> bool:
 	)
 	query.exclude = [self]
 	return spaceState.intersect_ray(query).is_empty()
+
+@onready var interaction_ray: RayCast3D = $Head/Camera3D/InteractionRay
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact"):
+		probeer_interactie()
+
+
+func probeer_interactie() -> void:
+	interaction_ray.force_raycast_update()
+
+	if interaction_ray.is_colliding():
+		var geraakt_object = interaction_ray.get_collider()
+
+		if geraakt_object.is_in_group("interactable"):
+			geraakt_object.interact()
