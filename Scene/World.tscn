@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://duq4apms1d18i"]
 
 [ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://Scripts/player.gd" id="1_3vc68"]
+[ext_resource type="PackedScene" uid="uid://bypl2ek1ul85x" path="res://Scene/inventory_ui.tscn" id="2_gx810"]
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
 [ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="3_gx810"]
 [ext_resource type="Script" uid="uid://6m02o4webkd4" path="res://Scene/interactable.gd" id="3_njlop"]
@@ -60,6 +61,8 @@ fov = 90.0
 target_position = Vector3(0, 0, -2)
 collide_with_areas = true
 collide_with_bodies = false
+
+[node name="inventory_ui" parent="Player" unique_id=156390380 instance=ExtResource("2_gx810")]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1857688455]
 transform = Transform3D(2.46057, 0, 0, 0, 1, 0, 0, 0, 1, -42.9706, 28.0283, -17.0434)
