@@ -2,14 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://Scripts/player.gd" id="1_3vc68"]
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
-[ext_resource type="Texture2D" uid="uid://be4wthq5m3m6k" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_6.jpg" id="3_g3u1b"]
-[ext_resource type="Texture2D" uid="uid://421i13evfrtq" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_7.jpg" id="4_gn608"]
-[ext_resource type="Texture2D" uid="uid://7xemm6ygws1x" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_8.png" id="5_1qj6l"]
-[ext_resource type="Texture2D" uid="uid://dudk52cvtrpqg" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_9.png" id="6_uoios"]
-[ext_resource type="Texture2D" uid="uid://c5art5wsimphr" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_10.jpg" id="7_caqns"]
 [ext_resource type="Texture2D" uid="uid://b5getvv61lj0k" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_11.png" id="8_r8foa"]
-[ext_resource type="Texture2D" uid="uid://diq32u5ps5484" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_12.png" id="9_0wulr"]
-[ext_resource type="Texture2D" uid="uid://dgbfvybx31ohd" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_13.jpg" id="10_dynlx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -34,7 +27,6 @@ albedo_color = Color(0.84313726, 0.8117647, 0.11764706, 0.99607843)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkdr5"]
 resource_name = "metroalt"
 cull_mode = 2
-albedo_texture = ExtResource("3_g3u1b")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -75,7 +67,6 @@ shadow_mesh = SubResource("ArrayMesh_8kdgx")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hpoea"]
 resource_name = "metropas"
 cull_mode = 2
-albedo_texture = ExtResource("4_gn608")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -116,7 +107,6 @@ shadow_mesh = SubResource("ArrayMesh_g2iqj")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14xrh"]
 resource_name = "metroic"
 cull_mode = 2
-albedo_texture = ExtResource("5_1qj6l")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -157,7 +147,6 @@ shadow_mesh = SubResource("ArrayMesh_vmuj1")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8v00"]
 resource_name = "metrotekerler"
 cull_mode = 2
-albedo_texture = ExtResource("6_uoios")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -278,7 +267,6 @@ shadow_mesh = SubResource("ArrayMesh_dlmov")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xfqcy"]
 resource_name = "poster3"
 cull_mode = 2
-albedo_texture = ExtResource("7_caqns")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -317,7 +305,6 @@ shadow_mesh = SubResource("ArrayMesh_srb2o")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k40at"]
 resource_name = "metrokoltuk"
 cull_mode = 2
-albedo_texture = ExtResource("8_r8foa")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -359,7 +346,6 @@ shadow_mesh = SubResource("ArrayMesh_n8r31")
 resource_name = "poster2"
 transparency = 4
 cull_mode = 2
-albedo_texture = ExtResource("9_0wulr")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -398,7 +384,6 @@ shadow_mesh = SubResource("ArrayMesh_tbgmg")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8hrdg"]
 resource_name = "poster1"
 cull_mode = 2
-albedo_texture = ExtResource("10_dynlx")
 roughness = 0.5
 uv1_scale = Vector3(1, -1, 1)
 
@@ -433,6 +418,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8lktf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3vc68"]
+albedo_texture = ExtResource("8_r8foa")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54tr1"]
 resource_name = "kapimaterial"
@@ -1070,6 +1058,7 @@ mesh = SubResource("ArrayMesh_3vxjj")
 skeleton = NodePath("")
 
 [node name="SM_Metro_metrokoltuk_0" type="MeshInstance3D" parent="SM_Metro2" unique_id=2048371472]
+material_override = SubResource("StandardMaterial3D_3vc68")
 mesh = SubResource("ArrayMesh_0mv7h")
 skeleton = NodePath("")
 
