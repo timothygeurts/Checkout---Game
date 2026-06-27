@@ -1,0 +1,362 @@
+[gd_scene format=3 uid="uid://ci1gmmm8qrv8n"]
+
+[ext_resource type="PackedScene" uid="uid://bpu4jo8c6ne6s" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props.glb" id="1_sa37r"]
+
+[node name="FAB converted" unique_id=792416520 instance=ExtResource("1_sa37r")]
+
+[node name="FAB converted model" parent="." index="0" unique_id=724577483]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 0, 0, 0)
+
+[node name="aec00311a2f64975a75cbf16b5878630_fbx" parent="FAB converted model" index="0" unique_id=827017173]
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0)
+
+[node name="SM_Barrel" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="0" unique_id=1593391410]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 39.00894, -589.1047)
+
+[node name="SM_Barrel_varilmnaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Barrel" index="0" unique_id=200781917]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, -2.9802322e-08)
+
+[node name="SM_Box01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="1" unique_id=830258821]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 64.376755, -368.7131)
+
+[node name="SM_Box01_kutumaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box01" index="0" unique_id=1512285329]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box01_kutumaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box01" index="1" unique_id=1238440293]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="2" unique_id=364793135]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02036, 64.376755, -398.954)
+
+[node name="SM_Box02_kutumaterial_001_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box02" index="0" unique_id=1201595264]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box02_kutumaterial2_001_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box02" index="1" unique_id=1079428721]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box03" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="3" unique_id=79795989]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 500.43384, 65.64275, -434.60736)
+
+[node name="SM_Box03_aletkutumaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box03" index="0" unique_id=299926262]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box03_aletkutumaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box03" index="1" unique_id=1299934667]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Box03_aletkutumaterial3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Box03" index="2" unique_id=304392637]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Cables" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="4" unique_id=1002810140]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.01324, 66.465385, -472.66278)
+
+[node name="SM_Cables_kablolarmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Cables" index="0" unique_id=856485202]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Cables_kablolarmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Cables" index="1" unique_id=174050563]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Cables_kablolarmaterial3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Cables" index="2" unique_id=75189191]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Door01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="5" unique_id=1945523276]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 464.4596, 98.176865, 407.33423)
+
+[node name="SM_Door01_kapimaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Door01" index="0" unique_id=1297622889]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Door01_kapimaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Door01" index="1" unique_id=1518315060]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Door02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="6" unique_id=306734347]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 464.45956, 105.00815, 294.15137)
+
+[node name="SM_Door02_kapimaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Door02" index="0" unique_id=2035084637]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Door02_dangersign_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Door02" index="1" unique_id=1494407107]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Door02_kapimaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Door02" index="2" unique_id=1960496788]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_FloorSign" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="7" unique_id=1428300129]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 41.117405, -277.5757)
+
+[node name="SM_FloorSign_temizlikmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorSign" index="0" unique_id=868831665]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 2.9802322e-08)
+
+[node name="SM_FloorSign_temizlikmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorSign" index="1" unique_id=521586912]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 2.9802322e-08)
+
+[node name="SM_FloorTile01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="8" unique_id=1441130289]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 125.416275, 0, 230.83226)
+
+[node name="SM_FloorTile01_T_FloorTile06_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorTile01" index="0" unique_id=74235772]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_FloorTile02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="9" unique_id=14259683]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 125.416275, 0, 122.56177)
+
+[node name="SM_FloorTile02_T_FloorTile07_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorTile02" index="0" unique_id=555441513]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_FloorTile03" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="10" unique_id=992538698]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 125.416275, 0, 633.9243)
+
+[node name="SM_FloorTile03_T_FloorTile03_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorTile03" index="0" unique_id=2134086600]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_FloorTile04" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="11" unique_id=1208017880]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 125.416275, 0, 456.4744)
+
+[node name="SM_FloorTile04_T_FloorTile04_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorTile04" index="0" unique_id=1222538255]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_FloorTile05" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="12" unique_id=264378123]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 125.41625, 0, 342.3289)
+
+[node name="SM_FloorTile05_T_FloorTile05_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_FloorTile05" index="0" unique_id=1509198436]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Hammer" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="13" unique_id=120574030]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 511.72906, 57.173584, -411.89557)
+
+[node name="SM_Hammer_cekicmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Hammer" index="0" unique_id=1788758754]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Hammer_cekicmaterial3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Hammer" index="1" unique_id=1478407450]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Hammer_cekicmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Hammer" index="2" unique_id=1536104903]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Ladder" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="14" unique_id=1196914184]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 125.56373, 58.334805)
+
+[node name="SM_Ladder_merdivenmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Ladder" index="0" unique_id=1540001215]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_MagazineStand" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="15" unique_id=602915793]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 515.76587, 92.64712, 642.8089)
+
+[node name="SM_MagazineStand_gazetelikmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_MagazineStand" index="0" unique_id=1281159007]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_MagazineStand_gazeteler_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_MagazineStand" index="1" unique_id=954979087]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Metro" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="16" unique_id=1984853266]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, -596.7041, 105.91113, 0.021658551)
+
+[node name="SM_Metro_metroalt_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="0" unique_id=1664828308]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_metropas_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="1" unique_id=1774539661]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_metroic_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="2" unique_id=880855424]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_metrotekerler_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="3" unique_id=1515987017]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_metrodemir_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="4" unique_id=647533033]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="5" unique_id=884596022]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_poster3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="6" unique_id=878076280]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_metrokoltuk_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="7" unique_id=771313316]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_poster2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="8" unique_id=1851635844]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Metro_poster1_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Metro" index="9" unique_id=562138656]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 4.5256456e-09, 0)
+
+[node name="SM_Pipes" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="17" unique_id=2011146621]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02078, 252.53299, -441.96786)
+
+[node name="SM_Pipes_borularmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Pipes" index="0" unique_id=54040572]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Pipes_borularmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Pipes" index="1" unique_id=1937486885]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Screwdriver" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="18" unique_id=1712989774]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 523.3059, 57.11801, -446.6022)
+
+[node name="SM_Screwdriver_tornavidamaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Screwdriver" index="0" unique_id=461053938]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Screwdriver_tornavidamaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Screwdriver" index="1" unique_id=1980585421]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Table" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="19" unique_id=517624046]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 38.0122, -425.05188)
+
+[node name="SM_Table_masamaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Table" index="0" unique_id=486330944]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, -2.9802322e-08)
+
+[node name="SM_Telephone" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="20" unique_id=1274410491]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 465.83566, 138.75162, 543.1436)
+
+[node name="SM_Telephone_telefonmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Telephone" index="0" unique_id=931237931]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Telephone_telefonmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Telephone" index="1" unique_id=865605133]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Telephone_telefonmaterial3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Telephone" index="2" unique_id=386582739]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Telephone_telefonmaterial4_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Telephone" index="3" unique_id=1553707905]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_TrashBin01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="21" unique_id=1316452265]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 496.0689, 39.098705, 544.67035)
+
+[node name="SM_TrashBin01_copkovamaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_TrashBin01" index="0" unique_id=1590397815]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_TrashBin01_copkovamaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_TrashBin01" index="1" unique_id=222924903]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_TrashBin02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="22" unique_id=198366685]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 498.02084, 47.611183, -46.11042)
+
+[node name="SM_TrashBin02_copkovasimaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_TrashBin02" index="0" unique_id=1033050153]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="23" unique_id=243920824]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 512.8892, 101.96169, 774.28375)
+
+[node name="SM_VendingMachine_vendingmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="0" unique_id=2101980220]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_vendingmaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="1" unique_id=1994587786]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_camvending_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="2" unique_id=1901481305]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_lays_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="3" unique_id=1264679324]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_su_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="4" unique_id=1565676375]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_suetiket_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="5" unique_id=408280286]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_sukapak_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="6" unique_id=1561482003]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_kola_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="7" unique_id=514558152]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_VendingMachine_fanta_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_VendingMachine" index="8" unique_id=1749019889]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_Vent" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="24" unique_id=1852823880]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 493.80728, 49, -178.25282)
+
+[node name="SM_Vent_ventmaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Vent" index="0" unique_id=874247763]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 2.9802322e-08)
+
+[node name="SM_Wall01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="25" unique_id=245950844]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, -14.930135, 50, 588.1275)
+
+[node name="SM_Wall01_metrowall_001_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Wall01" index="0" unique_id=1407551041]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 7.4505806e-08, 0, 0)
+
+[node name="SM_Wall02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="26" unique_id=1155973303]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, -14.930129, 100, 392.3289)
+
+[node name="SM_Wall02_metrowall_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_Wall02" index="0" unique_id=428048312]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, -5.9604645e-08, -2.3841858e-07, 0)
+
+[node name="SM_WallPoster01" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="27" unique_id=1529404621]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 171.96194, 295.1396, -206.95186)
+
+[node name="SM_WallPoster01_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster01" index="0" unique_id=2120405508]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster01_wallpostermaterial5_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster01" index="1" unique_id=1949027756]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster02" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="28" unique_id=466041637]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 171.96194, 109.69639, -223.91739)
+
+[node name="SM_WallPoster02_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster02" index="0" unique_id=627925916]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster02_wallpostermaterial6_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster02" index="1" unique_id=1783743193]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster03" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="29" unique_id=298401522]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 171.96194, 292.95007, -355.80057)
+
+[node name="SM_WallPoster03_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster03" index="0" unique_id=411565278]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster03_wallpostermaterial3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster03" index="1" unique_id=1280310427]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster04" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="30" unique_id=1216309702]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 171.96194, 292.95007, -482.63818)
+
+[node name="SM_WallPoster04_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster04" index="0" unique_id=107132261]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster04_wallpostermaterial4_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster04" index="1" unique_id=1101215802]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster05" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="31" unique_id=1984625483]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 171.96194, 134.77834, -483.97937)
+
+[node name="SM_WallPoster05_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster05" index="0" unique_id=1135892713]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster05_wallpostermaterial2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster05" index="1" unique_id=1642314207]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster06" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="32" unique_id=429012326]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 172.53499, 52.21, -481.88144)
+
+[node name="SM_WallPoster06_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster06" index="0" unique_id=1696212462]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster06_poster4_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster06" index="1" unique_id=2144864509]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster07" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="33" unique_id=2065846553]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 170.66609, 283.8173, -616.2582)
+
+[node name="SM_WallPoster07_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster07" index="0" unique_id=444328808]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster07_poster1_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster07" index="1" unique_id=731399107]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster08" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="34" unique_id=211569848]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 169.45605, 203.81102, -709.1544)
+
+[node name="SM_WallPoster08_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster08" index="0" unique_id=1948498847]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster08_poster3_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster08" index="1" unique_id=167729667]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster09" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode" parent_id_path=PackedInt32Array(717429839) index="35" unique_id=1259308424]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 170.60701, 92.91327, -666.61945)
+
+[node name="SM_WallPoster09_wallpostermaterial_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster09" index="0" unique_id=1812946119]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="SM_WallPoster09_poster2_0" parent="FAB converted model/aec00311a2f64975a75cbf16b5878630_fbx/RootNode/SM_WallPoster09" index="1" unique_id=1724937539]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
