@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b08wrsip8el1n"]
+
+[ext_resource type="PackedScene" uid="uid://c21c50wlowhd8" path="res://Assets/Conductor Rigged.glb" id="1_bukmg"]
+[ext_resource type="Script" uid="uid://bh7d4d04v2prj" path="res://Scene/Conductor.gd" id="2_hwrng"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7wol"]
+size = Vector3(1, 3.8617554, 1.4539795)
+
+[node name="Conductor Rigged" unique_id=641663285 instance=ExtResource("1_bukmg")]
+
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(372649570) index="0" unique_id=2083522684]
+bones/0/rotation = Quaternion(-2.9802326e-08, 1.1920928e-07, 3.197341e-36, 1)
+bones/1/rotation = Quaternion(-3.5527103e-15, 7.1054274e-15, -1.1102273e-16, 1)
+bones/3/rotation = Quaternion(-0.5735765, 1.8696564e-22, -1.367513e-07, 0.819152)
+bones/4/rotation = Quaternion(8.004161e-09, -0.050553814, -0.13889542, 0.9890159)
+bones/5/rotation = Quaternion(-0.0861747, 0.7015063, -0.12465933, 0.69636405)
+bones/7/rotation = Quaternion(-0.15212996, 0.040739015, -0.6190222, 0.7694208)
+bones/9/rotation = Quaternion(-0.0040220595, 0.043983996, -0.61937475, 0.78385216)
+bones/11/rotation = Quaternion(0.31085473, 0.20278352, -0.57399404, 0.72991717)
+bones/13/rotation = Quaternion(-0.27439007, -0.16817574, -0.5787043, 0.7493519)
+bones/15/rotation = Quaternion(-0.4753665, -0.2869838, -0.5107044, 0.65639013)
+bones/17/rotation = Quaternion(-3.5527103e-15, 3.9443088e-31, -1.6544016e-23, 1)
+bones/19/rotation = Quaternion(4.444418e-07, 1.3018976e-08, 0.57357645, 0.81915206)
+bones/20/rotation = Quaternion(0.13889542, 0.050553795, -8.239577e-08, 0.9890159)
+bones/21/rotation = Quaternion(0.124659285, -0.7015062, 0.08617451, 0.6963642)
+bones/23/rotation = Quaternion(0.15213461, -0.04072911, -0.61903703, 0.76940846)
+bones/25/rotation = Quaternion(0.43123496, 0.51132596, -0.4456454, 0.59496427)
+bones/27/rotation = Quaternion(-0.31085438, -0.2027835, -0.5739941, 0.7299173)
+bones/29/rotation = Quaternion(0.59797305, 0.65057117, -0.21162885, 0.41761062)
+bones/31/rotation = Quaternion(0.47534868, 0.28701648, -0.5106691, 0.6564163)
+bones/32/position = Vector3(0, 0.10317722, 0)
+bones/33/rotation = Quaternion(-0.7071068, 0, 0, 0.7071068)
+bones/35/rotation = Quaternion(-1.7659719e-08, -1.9513772e-08, -0.6710053, 0.7414526)
+bones/37/rotation = Quaternion(0.5, -0.50000006, 0.5, 0.49999997)
+bones/38/rotation = Quaternion(-2.5064026e-12, -1.2654803e-08, 0.00013100775, 1)
+bones/39/rotation = Quaternion(8.053475e-08, 8.416335e-08, -0.67110837, 0.74135935)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." index="2" unique_id=897311892]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." index="3" unique_id=1694102304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.495407, 31.741682, 6.5505767)
+script = ExtResource("2_hwrng")
+player_path = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" index="0" unique_id=2051457239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0149841, 0.21577454)
+shape = SubResource("BoxShape3D_d7wol")
