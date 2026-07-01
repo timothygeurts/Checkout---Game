@@ -25,7 +25,7 @@ func ververs_weergave() -> void:
 
 		var icoon_rect: TextureRect = TextureRect.new()
 		icoon_rect.texture = icoon
-		icoon_rect.custom_minimum_size = Vector2(64, 64)
+		icoon_rect.custom_minimum_size = Vector2(0, 0)
 		icoon_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icoon_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 

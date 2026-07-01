@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://b6cf3baqsqugn"]
+
+[ext_resource type="PackedScene" uid="uid://77dsw44qce0y" path="res://Scene/Main_Menu_Building.scn" id="1_sjmou"]
+[ext_resource type="Script" uid="uid://cqaf8h50ntq1x" path="res://Scripts/Camera_Main_Menu.gd" id="2_ppjel"]
+[ext_resource type="Script" uid="uid://b7pm3frgfchll" path="res://Scene/Start_Button.gd" id="3_ppjel"]
+[ext_resource type="Script" uid="uid://d35jdfd4sax2m" path="res://Scene/Exit_Button.gd" id="4_uyvy5"]
+[ext_resource type="Shader" uid="uid://cx85wuoiaj4ox" path="res://Scene/psx.gdshader" id="4_yf7ie"]
+[ext_resource type="Shader" uid="uid://d1q8c3tvlosff" path="res://Scene/vhs.gdshader" id="5_uyvy5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uyvy5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eslk0"]
+shader = ExtResource("4_yf7ie")
+shader_parameter/pixel_size = 4.0
+shader_parameter/kleur_niveaus = 16
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p0twe"]
+shader = ExtResource("5_uyvy5")
+shader_parameter/scanlines_1 = 500.0
+shader_parameter/scanlines_2 = 25.0
+shader_parameter/scan_reduction = 0.1
+shader_parameter/vignette_alpha = 1.0
+shader_parameter/vignette_inner_radius = 0.0
+shader_parameter/vignette_outer_radius = 1.0
+
+[node name="Node3D" type="Node3D" unique_id=134170766]
+
+[node name="Node3D" parent="." unique_id=825026669 instance=ExtResource("1_sjmou")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=2142738593]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1923972771]
+handle_input_locally = false
+size = Vector2i(1440, 1080)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1443914656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.669777, 31.368395, 11.6087475)
+script = ExtResource("2_ppjel")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SubViewportContainer/SubViewport/Camera3D" unique_id=953773330]
+spot_range = 13.829761
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="." unique_id=1415358361]
+layer = 2
+
+[node name="Node2D" type="Node2D" parent="CanvasLayer3" unique_id=61104937]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer3/Node2D" unique_id=1541884849]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 612.0
+offset_top = 502.0
+offset_right = 828.0
+offset_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="CanvasLayer3/Node2D/VBoxContainer" unique_id=1328772320]
+modulate = Color(3.5618727, 1.6931047, 1.5989941, 1)
+layout_mode = 2
+text = "Play"
+script = ExtResource("3_ppjel")
+
+[node name="Button2" type="Button" parent="CanvasLayer3/Node2D/VBoxContainer" unique_id=561773224]
+modulate = Color(3.5618727, 1.6931047, 1.5989941, 1)
+layout_mode = 2
+text = "Exit"
+script = ExtResource("4_uyvy5")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer3/Node2D" unique_id=1440332896]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -20.0
+offset_right = 42.5
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer3/Node2D/VBoxContainer2" unique_id=1797741782]
+layout_mode = 2
+text = "CHECKOUT"
+label_settings = SubResource("LabelSettings_uyvy5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1078928371]
+
+[node name="PsxRect" type="ColorRect" parent="CanvasLayer" unique_id=489726490]
+material = SubResource("ShaderMaterial_eslk0")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=890959947]
+
+[node name="VHSRect" type="ColorRect" parent="CanvasLayer2" unique_id=1394036773]
+material = SubResource("ShaderMaterial_p0twe")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

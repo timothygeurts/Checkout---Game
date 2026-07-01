@@ -38,8 +38,10 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("pause"):
 		isMouseCaptured = !isMouseCaptured
+
 		if isMouseCaptured:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
@@ -73,12 +75,12 @@ func _physics_process(delta: float) -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and isMouseCaptured:
 		lookDirection = event.relative * 0.01
 
 
 func RotateCamera(delta: float, sensitivityModifier: float = 1.0) -> void:
-	var controllerInput: Vector2 = Input.get_vector("look_left", "look_right", "look_down", "look_up")
+	var controllerInput: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_down", "ui_up")
 	lookDirection += controllerInput
 
 	rotation.y -= lookDirection.x * cameraSensitivity * delta
