@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dn7yly6hkjpl6"]
+
+[ext_resource type="Script" uid="uid://6m02o4webkd4" path="res://Scene/interactable.gd" id="1_afycy"]
+[ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="1_o3xcm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qeq5k"]
+size = Vector3(1.21875, 0.055664063, 0.6660156)
+
+[node name="Area3D" type="Area3D" unique_id=1181270784]
+script = ExtResource("1_afycy")
+
+[node name="Train Ticket" parent="." unique_id=499392631 instance=ExtResource("1_o3xcm")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2143179679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.039156035, 0)
+shape = SubResource("BoxShape3D_qeq5k")

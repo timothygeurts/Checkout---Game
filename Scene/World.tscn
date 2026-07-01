@@ -5,8 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
 [ext_resource type="PackedScene" uid="uid://dvm62xxkylrnh" path="res://Assets/Main character.glb" id="2_up0vq"]
 [ext_resource type="Texture2D" uid="uid://be4wthq5m3m6k" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_6.jpg" id="3_g3u1b"]
-[ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="3_gx810"]
-[ext_resource type="Script" path="res://Scene/interactable.gd" id="3_wx6ot"]
 [ext_resource type="Texture2D" uid="uid://421i13evfrtq" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_7.jpg" id="4_gn608"]
 [ext_resource type="Texture2D" uid="uid://ctisdlrb5xidq" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_22.jpg" id="4_i75kp"]
 [ext_resource type="Texture2D" uid="uid://7xemm6ygws1x" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_8.png" id="5_1qj6l"]
@@ -24,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://ikagu8qlx4v2" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_0.jpg" id="16_k6ms3"]
 [ext_resource type="PackedScene" uid="uid://ddj433isd8qt" path="res://Assets/characters_psx.glb" id="20_7b2x2"]
 [ext_resource type="PackedScene" uid="uid://b6701c8qrt3nm" path="res://Assets/Suitcase Brown.glb" id="22_7ti2o"]
+[ext_resource type="PackedScene" uid="uid://dn7yly6hkjpl6" path="res://Ticket.tscn" id="23_i75kp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -2613,10 +2612,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, -
 mesh = SubResource("ArrayMesh_k2jtq")
 skeleton = NodePath("")
 
-[node name="Train Ticket" parent="." unique_id=984243383 instance=ExtResource("3_gx810")]
-transform = Transform3D(0.44921708, 0, 0.21955414, 0, 0.5, 0, -0.21955414, 0, 0.44921708, -52.74899, 29.946503, -29.022398)
-script = ExtResource("3_wx6ot")
-
 [node name="SM_Pipes_borularmaterial2_0" type="MeshInstance3D" parent="." unique_id=1024463010]
 transform = Transform3D(-4.371139e-08, -1, -8.351872e-23, 1, -4.371139e-08, -3.650719e-30, 0, 8.351872e-23, 1, -79.53339, 34.631382, -22.23285)
 mesh = SubResource("ArrayMesh_i2oxt")
@@ -2669,10 +2664,6 @@ skeleton = NodePath("")
 
 [node name="Sketchfab_Scene" parent="." unique_id=1897026492 instance=ExtResource("20_7b2x2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.875126, 32.348385, 10.282684)
-
-[node name="Train Ticket2" parent="." unique_id=535558895 instance=ExtResource("3_gx810")]
-transform = Transform3D(0.44921708, 0, 0.21955414, 0, 0.5, 0, -0.21955414, 0, 0.44921708, -2.849327, 28.616537, -11.331166)
-script = ExtResource("3_wx6ot")
 
 [node name="SM_Vent" type="Node3D" parent="." unique_id=1249648138]
 transform = Transform3D(-6.556708e-08, 1.5, 6.556708e-08, 0, -6.556708e-08, 1.5, 1.5, 6.556708e-08, 2.8660283e-15, -5.7903404, 29.319004, 23.02604)
@@ -2758,18 +2749,26 @@ transform = Transform3D(-4.371139e-08, -1, -8.351872e-23, 1, -4.371139e-08, -3.6
 mesh = SubResource("ArrayMesh_i2oxt")
 skeleton = NodePath("")
 
-[node name="Train Ticket3" parent="." unique_id=854871532 instance=ExtResource("3_gx810")]
-transform = Transform3D(0.47289267, 0, -0.16239622, 0, 0.5, 0, 0.16239622, 0, 0.47289267, -48.262833, 29.13141, 1.8367633)
-script = ExtResource("3_wx6ot")
-
 [node name="Suitcase Brown" parent="." unique_id=200264506 instance=ExtResource("22_7ti2o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.812143, 32.006775, 39.558765)
 
-[node name="Marker3D" type="Marker3D" parent="." unique_id=699009482]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.30231, 31.040201, 13.4933815)
+[node name="Ticket 1" parent="." unique_id=1181270784 instance=ExtResource("23_i75kp")]
+transform = Transform3D(0.3155518, 0, -0.15141676, 0.0012336412, 0.34998837, 0.0025709022, 0.15141174, -0.002851562, 0.31554133, -48.01305, 29.102709, -2.117159)
 
-[node name="Marker3D2" type="Marker3D" parent="." unique_id=411625691]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.00993, 31.040201, 20.236208)
+[node name="Ticket 2" parent="." unique_id=667558236 instance=ExtResource("23_i75kp")]
+transform = Transform3D(0.04820265, 0.002376523, -0.34665662, 0.0012336412, 0.34998834, 0.0025709022, 0.34666258, -0.001575926, 0.04819268, -44.383354, 30.396427, -19.05785)
 
-[node name="Marker3D3" type="Marker3D" parent="." unique_id=2085157896]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.89858, 31.040201, 23.709988)
+[node name="Ticket 3" parent="." unique_id=285267228 instance=ExtResource("23_i75kp")]
+transform = Transform3D(0.32598662, -0.00021314668, -0.12740725, 0.0012336413, 0.34998834, 0.0025709022, 0.1274015, -0.0028435849, 0.32597658, -82.93907, 30.396427, -21.79226)
+
+[node name="Ticket 4" parent="." unique_id=1037094431 instance=ExtResource("23_i75kp")]
+transform = Transform3D(-0.2794597, 0.0025327993, -0.21070318, 0.001233641, 0.34998828, 0.0025709015, 0.21071473, 0.0013100897, -0.2794593, -2.7246742, 28.562782, -10.748748)
+
+[node name="Ticket 5" parent="." unique_id=293081371 instance=ExtResource("23_i75kp")]
+transform = Transform3D(-0.2794597, 0.0025327993, -0.21070318, 0.001233641, 0.34998828, 0.0025709015, 0.21071473, 0.0013100897, -0.2794593, -2.7246742, 28.562782, 14.808135)
+
+[node name="Ticket 6" parent="." unique_id=1037512745 instance=ExtResource("23_i75kp")]
+transform = Transform3D(-0.14569877, -0.0018240338, 0.31822705, 0.0012336408, 0.34998825, 0.0025709013, -0.3182299, 0.0021918728, -0.14568758, -34.227562, 30.443373, 12.504304)
+
+[node name="Ticket 7" parent="." unique_id=849983815 instance=ExtResource("23_i75kp")]
+transform = Transform3D(-0.2820711, -0.00052784395, 0.20720887, 0.0012336408, 0.34998822, 0.002570901, -0.20720594, 0.002802282, -0.2820599, -65.71805, 28.57654, 13.741603)
