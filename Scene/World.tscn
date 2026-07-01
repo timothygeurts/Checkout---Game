@@ -30,7 +30,7 @@ ground_curve = 0.181792
 sky_material = SubResource("ProceduralSkyMaterial_c6gwx")
 
 [sub_resource type="Environment" id="Environment_2dftf"]
-background_mode = 2
+background_mode = 1
 sky = SubResource("Sky_c6gwx")
 ambient_light_energy = 0.0
 glow_bloom = 0.31

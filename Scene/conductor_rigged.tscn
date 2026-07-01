@@ -40,7 +40,6 @@ bones/39/rotation = Quaternion(8.053475e-08, 8.416335e-08, -0.67110837, 0.741359
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." index="3" unique_id=1694102304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.495407, 31.741682, 6.5505767)
 script = ExtResource("2_hwrng")
-player_path = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" index="0" unique_id=2051457239]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0149841, 0.21577454)
