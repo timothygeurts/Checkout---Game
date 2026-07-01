@@ -28,6 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://ddj433isd8qt" path="res://Assets/characters_psx.glb" id="20_7b2x2"]
 [ext_resource type="PackedScene" uid="uid://b6701c8qrt3nm" path="res://Assets/Suitcase Brown.glb" id="22_7ti2o"]
 [ext_resource type="PackedScene" uid="uid://dn7yly6hkjpl6" path="res://Scene/Ticket.tscn" id="23_i75kp"]
+[ext_resource type="Shader" uid="uid://cx85wuoiaj4ox" path="res://Scene/psx.gdshader" id="29_hprkt"]
+[ext_resource type="Shader" uid="uid://d1q8c3tvlosff" path="res://Scene/vhs.gdshader" id="30_tlcnr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -1619,6 +1621,20 @@ size = Vector3(13.270782, 13.711159, 13.017578)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_44avt"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tlcnr"]
+shader = ExtResource("29_hprkt")
+shader_parameter/pixel_size = 4.0
+shader_parameter/kleur_niveaus = 16
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k1vve"]
+shader = ExtResource("30_tlcnr")
+shader_parameter/scanlines_1 = 500.0
+shader_parameter/scanlines_2 = 25.0
+shader_parameter/scan_reduction = 0.1
+shader_parameter/vignette_alpha = 1.0
+shader_parameter/vignette_inner_radius = 0.0
+shader_parameter/vignette_outer_radius = 1.0
+
 [node name="World" type="Node3D" unique_id=641349800]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1183707388]
@@ -3081,3 +3097,27 @@ transform = Transform3D(-0.14569877, -0.0018240338, 0.31822705, 0.0012336408, 0.
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 6" unique_id=906003038]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_44avt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=192641370]
+layer = 9
+
+[node name="PsxRect" type="ColorRect" parent="CanvasLayer" unique_id=562535127]
+material = SubResource("ShaderMaterial_tlcnr")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2008365062]
+layer = 10
+
+[node name="VHSRect" type="ColorRect" parent="CanvasLayer2" unique_id=722114894]
+material = SubResource("ShaderMaterial_k1vve")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
