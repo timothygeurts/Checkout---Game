@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dn7yly6hkjpl6"]
 
-[ext_resource type="Script" uid="uid://6m02o4webkd4" path="res://Scene/interactable.gd" id="1_afycy"]
+[ext_resource type="Script" uid="uid://6m02o4webkd4" path="res://Scripts/interactable.gd" id="1_afycy"]
 [ext_resource type="PackedScene" uid="uid://c3j2e0g72iugi" path="res://Assets/Train Ticket.glb" id="1_o3xcm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qeq5k"]

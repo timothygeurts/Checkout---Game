@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://b08wrsip8el1n"]
 
 [ext_resource type="PackedScene" uid="uid://c21c50wlowhd8" path="res://Assets/Conductor Rigged.glb" id="1_bukmg"]
-[ext_resource type="Script" uid="uid://bh7d4d04v2prj" path="res://Scene/Conductor.gd" id="2_hwrng"]
+[ext_resource type="Script" uid="uid://bh7d4d04v2prj" path="res://Scripts/Conductor.gd" id="2_hwrng"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d7wol"]
 size = Vector3(1, 3.8617554, 1.4539795)
 
 [node name="Conductor Rigged" unique_id=641663285 instance=ExtResource("1_bukmg")]
 
-[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(372649570) index="0" unique_id=2083522684]
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(132030893) index="0" unique_id=1395626675]
 bones/0/rotation = Quaternion(-2.9802326e-08, 1.1920928e-07, 3.197341e-36, 1)
 bones/1/rotation = Quaternion(-3.5527103e-15, 7.1054274e-15, -1.1102273e-16, 1)
 bones/3/rotation = Quaternion(-0.5735765, 1.8696564e-22, -1.367513e-07, 0.819152)

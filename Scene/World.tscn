@@ -1,9 +1,7 @@
 [gd_scene format=4 uid="uid://duq4apms1d18i"]
 
-[ext_resource type="Script" uid="uid://3sm54kdx27fi" path="res://Scripts/player.gd" id="1_3vc68"]
-[ext_resource type="PackedScene" uid="uid://bypl2ek1ul85x" path="res://Scene/inventory_ui.tscn" id="2_gx810"]
+[ext_resource type="PackedScene" uid="uid://dwdkobty8vgss" path="res://Scene/player.tscn" id="1_7b2x2"]
 [ext_resource type="Texture2D" uid="uid://buag77nh2uaye" path="res://Png's/Game Map (2).png" id="2_njlop"]
-[ext_resource type="PackedScene" uid="uid://dvm62xxkylrnh" path="res://Assets/Main character.glb" id="2_up0vq"]
 [ext_resource type="Texture2D" uid="uid://be4wthq5m3m6k" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_6.jpg" id="3_g3u1b"]
 [ext_resource type="Texture2D" uid="uid://421i13evfrtq" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_7.jpg" id="4_gn608"]
 [ext_resource type="Texture2D" uid="uid://ctisdlrb5xidq" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_22.jpg" id="4_i75kp"]
@@ -22,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://ikagu8qlx4v2" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_0.jpg" id="16_k6ms3"]
 [ext_resource type="PackedScene" uid="uid://ddj433isd8qt" path="res://Assets/characters_psx.glb" id="20_7b2x2"]
 [ext_resource type="PackedScene" uid="uid://b6701c8qrt3nm" path="res://Assets/Suitcase Brown.glb" id="22_7ti2o"]
-[ext_resource type="PackedScene" uid="uid://dn7yly6hkjpl6" path="res://Ticket.tscn" id="23_i75kp"]
+[ext_resource type="PackedScene" uid="uid://dn7yly6hkjpl6" path="res://Scene/Ticket.tscn" id="23_i75kp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -36,9 +34,6 @@ background_mode = 2
 sky = SubResource("Sky_c6gwx")
 ambient_light_energy = 0.0
 glow_bloom = 0.31
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_enqny"]
-size = Vector3(1, 3.2033768, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1wwxd"]
 resource_name = "wallpostermaterial"
@@ -1314,39 +1309,8 @@ light_volumetric_fog_energy = 0.0
 light_specular = 0.0
 sky_mode = 1
 
-[node name="Player" type="CharacterBody3D" parent="." unique_id=204208416]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.91101, 29.37265, 8.830288)
-script = ExtResource("1_3vc68")
-
-[node name="Main character" parent="Player" unique_id=2075877684 instance=ExtResource("2_up0vq")]
-transform = Transform3D(-2.8412401e-08, 0, 0.65, 0, 0.65, 0, -0.65, 0, -2.8412401e-08, 0, -0.71497536, 0.018306732)
-
-[node name="Head" type="Node3D" parent="Player" unique_id=260008169]
-transform = Transform3D(0.2, 0, 0, 0, 0.00731995, 0, 0, 0, 0.0522343, 0, 0.640444, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=434330667]
-transform = Transform3D(5, 0, 0, 0, 136.61295, 0, 0, 0, 19.144508, 0, 198.21729, -4.303833)
-fov = 90.0
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Player/Head/Camera3D" unique_id=1162103801]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06157303, -0.018762589, 0)
-light_energy = 1.117
-light_indirect_energy = 0.0
-light_volumetric_fog_energy = 0.0
-light_specular = 2.0
-light_bake_mode = 1
-spot_range = 15.0
-spot_attenuation = 1.08
-spot_angle = 55.0
-
-[node name="InteractionRay" type="RayCast3D" parent="Player/Head/Camera3D" unique_id=1609437070]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06157303, -0.018762589, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2028293121]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8490181, 0)
-shape = SubResource("BoxShape3D_enqny")
-
-[node name="inventory_ui" parent="Player" unique_id=156390380 instance=ExtResource("2_gx810")]
+[node name="Player" parent="." unique_id=93177019 instance=ExtResource("1_7b2x2")]
+transform = Transform3D(-0.25881916, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881916, -81.727135, 29.443054, -28.225912)
 
 [node name="FAB converted" parent="." unique_id=792416520 instance=ExtResource("11_0wulr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.59754, 29.993107, -4.366455)
@@ -1376,9 +1340,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039794922, 1.6306458, 0)
 mesh = SubResource("BoxMesh_qeq5k")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Building" unique_id=1857688455]
-transform = Transform3D(2.46057, 0, 0, 0, 1, 0, 0, 0, 1, -42.9706, 28.0283, -17.0434)
+transform = Transform3D(2.46057, 0, 0, 0, 1, 0, 0, 0, 1, -42.9706, 28.0283, -17.057386)
 use_collision = true
-size = Vector3(33.4962, 1.06793, 11.762)
+size = Vector3(33.4962, 1.06793, 11.734028)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Building" unique_id=756235490]
@@ -1393,9 +1357,9 @@ visible = false
 texture = ExtResource("2_njlop")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Building" unique_id=1911763999]
-transform = Transform3D(-2.46057, 0, 8.74228e-08, 0, 1, 0, -2.1511e-07, 0, -1, -42.9706, 28.0283, 9.78388)
+transform = Transform3D(-2.46057, 0, 8.74228e-08, 0, 1, 0, -2.1511e-07, 0, -1, -42.9706, 28.0283, 9.826149)
 use_collision = true
-size = Vector3(33.4962, 1.06793, 11.762)
+size = Vector3(33.4962, 1.06793, 11.6774645)
 material = SubResource("StandardMaterial3D_c6gwx")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Building" unique_id=1808920904]
@@ -2527,7 +2491,7 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_r15o0")
 
 [node name="SM_Barrel4" type="Node3D" parent="." unique_id=1487183477]
-transform = Transform3D(2.35, 0, 0, 0, -1.02721756e-07, 2.35, 0, -2.35, -1.02721756e-07, -44.268864, 31.53933, -19.985182)
+transform = Transform3D(2.35, 0, 0, 0, -1.02721756e-07, 2.35, 0, -2.35, -1.02721756e-07, -44.268864, 31.379726, -19.985182)
 
 [node name="SM_Barrel_varilmnaterial_0" type="MeshInstance3D" parent="SM_Barrel4" unique_id=609872344]
 transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, -2.9802322e-08)

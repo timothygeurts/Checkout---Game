@@ -1,82 +1,82 @@
 [gd_scene format=4 uid="uid://xg3s60n0s7d2"]
 
-[ext_resource type="Script" uid="uid://ruanye7bnx33" path="res://Conducter_Enemy.gd" id="1_77m17"]
-[ext_resource type="Texture2D" uid="uid://i2447x8oyht4" path="res://Assets/Conductor Rigged_Pants Conductor.png" id="2_sqpku"]
-[ext_resource type="Texture2D" uid="uid://7m2l3gm10fvr" path="res://Assets/Conductor Rigged_Coat Conductor.png" id="3_j01rd"]
-[ext_resource type="Texture2D" uid="uid://qhefgp3c7sdn" path="res://Assets/Conductor Rigged_Button.png" id="4_kxu6q"]
-[ext_resource type="Texture2D" uid="uid://b4yu740kcrilw" path="res://Assets/Conductor Rigged_Skin Texture 2.jpg" id="5_0t8sg"]
-[ext_resource type="Texture2D" uid="uid://b2vrhwkiooe85" path="res://Assets/Conductor Rigged_Leather.png" id="6_nimhh"]
-[ext_resource type="Texture2D" uid="uid://bote1rurnudm2" path="res://Assets/Conductor Rigged_Skin Texture.jpg" id="7_8o0f5"]
+[ext_resource type="Script" uid="uid://ruanye7bnx33" path="res://Scripts/Conducter_Enemy.gd" id="1_057up"]
+[ext_resource type="Texture2D" uid="uid://i2447x8oyht4" path="res://Assets/Conductor Rigged_Pants Conductor.png" id="2_eptir"]
+[ext_resource type="Texture2D" uid="uid://7m2l3gm10fvr" path="res://Assets/Conductor Rigged_Coat Conductor.png" id="3_hcxuj"]
+[ext_resource type="Texture2D" uid="uid://qhefgp3c7sdn" path="res://Assets/Conductor Rigged_Button.png" id="4_rxbso"]
+[ext_resource type="Texture2D" uid="uid://b4yu740kcrilw" path="res://Assets/Conductor Rigged_Skin Texture 2.jpg" id="5_nd1um"]
+[ext_resource type="Texture2D" uid="uid://b2vrhwkiooe85" path="res://Assets/Conductor Rigged_Leather.png" id="6_p03bu"]
+[ext_resource type="Texture2D" uid="uid://bote1rurnudm2" path="res://Assets/Conductor Rigged_Skin Texture.jpg" id="7_xhx5t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i18d2"]
 resource_name = "Cloth 1"
 cull_mode = 2
-albedo_texture = ExtResource("2_sqpku")
+albedo_texture = ExtResource("2_eptir")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nmbby"]
 resource_name = "Cloth 2"
 cull_mode = 2
-albedo_texture = ExtResource("3_j01rd")
+albedo_texture = ExtResource("3_hcxuj")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tqip"]
 resource_name = "Material.007"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_adg2g"]
 resource_name = "Material.008"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1jhv1"]
 resource_name = "Material.009"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_btnqc"]
 resource_name = "Material.010"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d34rj"]
 resource_name = "Material.011"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdmjb"]
 resource_name = "Material.012"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8s2g"]
 resource_name = "Face"
 cull_mode = 2
-albedo_texture = ExtResource("5_0t8sg")
+albedo_texture = ExtResource("5_nd1um")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmd1v"]
 resource_name = "Leather"
 cull_mode = 2
-albedo_texture = ExtResource("6_nimhh")
+albedo_texture = ExtResource("6_p03bu")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lck44"]
 resource_name = "Skin"
 cull_mode = 2
-albedo_texture = ExtResource("7_8o0f5")
+albedo_texture = ExtResource("7_xhx5t")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ud137"]
 resource_name = "Material.004"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bbay7"]
 resource_name = "Material.005"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r85lh"]
 resource_name = "Material.006"
 cull_mode = 2
-albedo_texture = ExtResource("4_kxu6q")
+albedo_texture = ExtResource("4_rxbso")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xmosa"]
 resource_name = "Conductor Rigged_Sphere_036"
@@ -619,7 +619,7 @@ _data = {
 size = Vector3(1, 5.993675, 3.175232)
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=448999795]
-script = ExtResource("1_77m17")
+script = ExtResource("1_057up")
 
 [node name="Armature" type="Node3D" parent="." unique_id=1818615124]
 transform = Transform3D(1.2386479, 0, 0, 0, 1.2386479, 0, 0, 0, 1.2386479, 0, 2.1941442, 0)
