@@ -34,6 +34,7 @@ spot_angle = 55.0
 [node name="InteractionRay" type="RayCast3D" parent="Head/Camera3D" unique_id=1973029800]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06157303, -0.018762589, 0)
 target_position = Vector3(0, 0, -3)
+collide_with_areas = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=152067414]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8490181, 0)

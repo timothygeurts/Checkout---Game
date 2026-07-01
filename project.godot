@@ -38,7 +38,7 @@ import/blender/enabled.web=true
 
 [global_group]
 
-interactables=""
+interactable=""
 
 [input]
 

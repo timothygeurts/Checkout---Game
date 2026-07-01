@@ -3040,42 +3040,42 @@ skeleton = NodePath("")
 [node name="Suitcase Brown" parent="." unique_id=1937374895 instance=ExtResource("22_7ti2o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.812143, 32.006775, 39.558765)
 
-[node name="Ticket 1" parent="." unique_id=1181270784 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 1" parent="." unique_id=1181270784 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(0.3155518, 0, -0.15141676, 0.0012336412, 0.34998837, 0.0025709022, 0.15141174, -0.002851562, 0.31554133, -48.01305, 29.102709, -2.117159)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 1" unique_id=1700242749]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_7ti2o")
 
-[node name="Ticket 2" parent="." unique_id=219940738 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 2" parent="." unique_id=219940738 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(0.04820265, 0.002376523, -0.34665662, 0.0012336412, 0.34998834, 0.0025709022, 0.34666258, -0.001575926, 0.04819268, -44.383354, 30.396427, -19.05785)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 2" unique_id=593995617]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_i75kp")
 
-[node name="Ticket 3" parent="." unique_id=1291084795 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 3" parent="." unique_id=1291084795 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(0.32598662, -0.00021314668, -0.12740725, 0.0012336413, 0.34998834, 0.0025709022, 0.1274015, -0.0028435849, 0.32597658, -82.93907, 30.396427, -21.79226)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 3" unique_id=517936631]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_wx6ot")
 
-[node name="Ticket 4" parent="." unique_id=1466610174 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 4" parent="." unique_id=1466610174 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(-0.2794597, 0.0025327993, -0.21070318, 0.001233641, 0.34998828, 0.0025709015, 0.21071473, 0.0013100897, -0.2794593, -2.7246742, 28.562782, -10.748748)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 4" unique_id=881425947]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_3vxjj")
 
-[node name="Ticket 5" parent="." unique_id=1438202565 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 5" parent="." unique_id=1438202565 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(-0.2794597, 0.0025327993, -0.21070318, 0.001233641, 0.34998828, 0.0025709015, 0.21071473, 0.0013100897, -0.2794593, -2.7246742, 28.562782, 14.808135)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 5" unique_id=381354052]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("BoxShape3D_0mv7h")
 
-[node name="Ticket 6" parent="." unique_id=567771833 groups=["interactables"] instance=ExtResource("23_i75kp")]
+[node name="Ticket 6" parent="." unique_id=567771833 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(-0.14569877, -0.0018240338, 0.31822705, 0.0012336408, 0.34998825, 0.0025709013, -0.3182299, 0.0021918728, -0.14568758, -34.227562, 30.443373, 12.504304)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 6" unique_id=906003038]
