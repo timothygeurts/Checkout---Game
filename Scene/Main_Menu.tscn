@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://d35jdfd4sax2m" path="res://Scene/Exit_Button.gd" id="4_uyvy5"]
 [ext_resource type="Shader" uid="uid://cx85wuoiaj4ox" path="res://Scene/psx.gdshader" id="4_yf7ie"]
 [ext_resource type="Shader" uid="uid://d1q8c3tvlosff" path="res://Scene/vhs.gdshader" id="5_uyvy5"]
+[ext_resource type="AudioStream" uid="uid://d0d7klx64i0a7" path="res://Music/jorisvermeer-ominous-horror-game-background-418850.mp3" id="7_eslk0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uyvy5"]
 
@@ -118,3 +119,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=874745577]
+stream = ExtResource("7_eslk0")
+volume_db = -35.0
+autoplay = true

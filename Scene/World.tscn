@@ -31,6 +31,7 @@
 [ext_resource type="Shader" uid="uid://cx85wuoiaj4ox" path="res://Scene/psx.gdshader" id="29_hprkt"]
 [ext_resource type="Shader" uid="uid://d1q8c3tvlosff" path="res://Scene/vhs.gdshader" id="30_tlcnr"]
 [ext_resource type="Script" uid="uid://dg0ccvw5h860" path="res://Scene/Exit_World.gd" id="31_k1vve"]
+[ext_resource type="AudioStream" uid="uid://b4dlus2bdb85h" path="res://Music/everything_is_dead-spooky-horror-background-549982.mp3" id="32_4laf0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -3150,5 +3151,10 @@ pixel_size = 1.0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4" unique_id=1481799892]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.263447, 31.089664, -42.76519)
 shape = SubResource("BoxShape3D_qeq5k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=707643354]
+stream = ExtResource("32_4laf0")
+volume_db = -60.0
+autoplay = true
 
 [connection signal="area_entered" from="StaticBody3D3/Area3D" to="StaticBody3D3" method="_on_area_3d_area_entered"]
