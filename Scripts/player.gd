@@ -155,6 +155,10 @@ func probeer_interactie() -> void:
 
 	if interaction_ray.is_colliding():
 		var geraakt_object = interaction_ray.get_collider()
+		print("Geraakt: ", geraakt_object.name)
+		print("In groep: ", geraakt_object.is_in_group("interactable"))
 
 		if geraakt_object.is_in_group("interactable"):
 			geraakt_object.interact()
+	else:
+		print("Raycast raakt niks")

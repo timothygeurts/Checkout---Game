@@ -20,7 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://ikagu8qlx4v2" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_0.jpg" id="16_k6ms3"]
 [ext_resource type="PackedScene" uid="uid://ddj433isd8qt" path="res://Assets/characters_psx.glb" id="20_7b2x2"]
 [ext_resource type="PackedScene" uid="uid://b6701c8qrt3nm" path="res://Assets/Suitcase Brown.glb" id="22_7ti2o"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://dn7yly6hkjpl6" path="res://Scene/Ticket.tscn" id="23_i75kp"]
+=======
+[ext_resource type="PackedScene" path="res://Ticket.tscn" id="23_i75kp"]
+>>>>>>> 897ebe25e6eeadbe0200bbdc92423b74c68aeb09
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c6gwx"]
 ground_bottom_color = Color(0, 0, 0, 1)
@@ -1295,6 +1299,9 @@ size = Vector3(76.13846, 8.271362, 6.501953)
 [sub_resource type="BoxShape3D" id="BoxShape3D_up0vq"]
 size = Vector3(13.270782, 13.711159, 13.017578)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_i75kp"]
+size = Vector3(4.837494, 3.4694824, 1.4130859)
+
 [node name="World" type="Node3D" unique_id=641349800]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1183707388]
@@ -1309,8 +1316,46 @@ light_volumetric_fog_energy = 0.0
 light_specular = 0.0
 sky_mode = 1
 
+<<<<<<< HEAD
 [node name="Player" parent="." unique_id=93177019 instance=ExtResource("1_7b2x2")]
 transform = Transform3D(-0.25881916, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881916, -81.727135, 29.443054, -28.225912)
+=======
+[node name="Player" type="CharacterBody3D" parent="." unique_id=204208416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.91101, 29.37265, 8.830288)
+script = ExtResource("1_3vc68")
+
+[node name="Main character" parent="Player" unique_id=2075877684 instance=ExtResource("2_up0vq")]
+transform = Transform3D(-2.8412401e-08, 0, 0.65, 0, 0.65, 0, -0.65, 0, -2.8412401e-08, 0, -0.71497536, 0.018306732)
+
+[node name="Head" type="Node3D" parent="Player" unique_id=260008169]
+transform = Transform3D(0.2, 0, 0, 0, 0.00731995, 0, 0, 0, 0.0522343, 0, 0.640444, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=434330667]
+transform = Transform3D(5, 0, 0, 0, 136.61295, 0, 0, 0, 19.144508, 0, 198.21729, -4.303833)
+fov = 90.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Player/Head/Camera3D" unique_id=1162103801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06157303, -0.018762589, 0)
+light_energy = 1.117
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_specular = 2.0
+light_bake_mode = 1
+spot_range = 15.0
+spot_attenuation = 1.08
+spot_angle = 55.0
+
+[node name="InteractionRay" type="RayCast3D" parent="Player/Head/Camera3D" unique_id=1609437070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06157303, -0.018762589, 0)
+target_position = Vector3(0, 0, -3)
+collide_with_areas = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2028293121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8490181, 0)
+shape = SubResource("BoxShape3D_enqny")
+
+[node name="inventory_ui" parent="Player" unique_id=156390380 instance=ExtResource("2_gx810")]
+>>>>>>> 897ebe25e6eeadbe0200bbdc92423b74c68aeb09
 
 [node name="FAB converted" parent="." unique_id=792416520 instance=ExtResource("11_0wulr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.59754, 29.993107, -4.366455)
@@ -2717,6 +2762,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.812143, 32.006775, 39.558765)
 
 [node name="Ticket 1" parent="." unique_id=1181270784 instance=ExtResource("23_i75kp")]
+[node name="Ticket 1" parent="." unique_id=1181270784 groups=["interactable"] instance=ExtResource("23_i75kp")]
 transform = Transform3D(0.3155518, 0, -0.15141676, 0.0012336412, 0.34998837, 0.0025709022, 0.15141174, -0.002851562, 0.31554133, -48.01305, 29.102709, -2.117159)
 
 [node name="Ticket 2" parent="." unique_id=667558236 instance=ExtResource("23_i75kp")]
@@ -2736,3 +2782,6 @@ transform = Transform3D(-0.14569877, -0.0018240338, 0.31822705, 0.0012336408, 0.
 
 [node name="Ticket 7" parent="." unique_id=849983815 instance=ExtResource("23_i75kp")]
 transform = Transform3D(-0.2820711, -0.00052784395, 0.20720887, 0.0012336408, 0.34998822, 0.002570901, -0.20720594, 0.002802282, -0.2820599, -65.71805, 28.57654, 13.741603)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Ticket 1" unique_id=161564609]
+transform = Transform3D(1, -3.4924597e-09, 5.9604645e-08, 0, 1, 2.6402995e-07, 0, 6.0535967e-09, 1, 0.097595215, 0.31604767, 0.18593216)
+shape = SubResource("BoxShape3D_i75kp")
