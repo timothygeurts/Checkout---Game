@@ -21,8 +21,6 @@ func show_message(text: String) -> void:
 	if popup_label:
 		popup_label.text = text
 		popup_label.visible = true
-
-		# hide after 2 seconds
 		await get_tree().create_timer(2.0).timeout
 		popup_label.visible = false
 
