@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://dgbfvybx31ohd" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_13.jpg" id="10_dynlx"]
 [ext_resource type="PackedScene" uid="uid://bpu4jo8c6ne6s" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props.glb" id="11_0wulr"]
 [ext_resource type="Texture2D" uid="uid://c8tja31ejh6ya" path="res://Png's/Stone_12-128x128.png" id="11_5mjek"]
+[ext_resource type="Script" uid="uid://dlgonx1jsyeel" path="res://Scene/exit_zone.gd" id="12_5topm"]
 [ext_resource type="Texture2D" uid="uid://fon5is6n84qy" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_14.png" id="12_dynlx"]
 [ext_resource type="Texture2D" uid="uid://7153q77ykcqm" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_15.jpg" id="13_k6ms3"]
 [ext_resource type="Texture2D" uid="uid://dd0x2wpurjssj" path="res://Assets/low_poly_psx_style_soviet_subway_metro_props_17.png" id="14_g2iqj"]
@@ -478,6 +479,9 @@ data = PackedVector3Array(0.071499996, -0.1538, 0.5737, 0.0755, -0.1538, 0.3315,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qeq5k"]
 albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4laf0"]
+size = Vector3(1, 1, 1.2815552)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54tr1"]
 resource_name = "kapimaterial"
@@ -1650,7 +1654,7 @@ light_volumetric_fog_energy = 0.0
 light_specular = 0.0
 sky_mode = 1
 
-[node name="Player" parent="." unique_id=93177019 instance=ExtResource("1_7b2x2")]
+[node name="Player" parent="." unique_id=93177019 groups=["player"] instance=ExtResource("1_7b2x2")]
 transform = Transform3D(-0.25881916, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881916, -81.727135, 29.443054, -28.225912)
 
 [node name="FAB converted" parent="." unique_id=1012971764 instance=ExtResource("11_0wulr")]
@@ -1729,7 +1733,7 @@ size = Vector3(6.7635593, 1.06793, 11.762)
 material = SubResource("StandardMaterial3D_5topm")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Building" unique_id=102711942]
-transform = Transform3D(0.94489, 0, 0, 0, 1, 0, 0, 0, 1, -56.148006, 28.0283, -35.37104)
+transform = Transform3D(0.94489, 0, 0, 0, 1, 0, 0, 0, 1, -56.149784, 28.0283, -35.37689)
 use_collision = true
 size = Vector3(6.0711393, 1.06793, 24.993319)
 material = SubResource("StandardMaterial3D_tjx3c")
@@ -2155,9 +2159,17 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_60j2q")
 
 [node name="CSGBox3D79" type="CSGBox3D" parent="Building" unique_id=1527668594]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.28682, 31.043388, -48.069893)
-size = Vector3(7.9556885, 5.6255493, 1)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -56.286865, 31.069477, -45.181118)
+size = Vector3(7.9556885, 5.6255493, 5.397461)
 material = SubResource("StandardMaterial3D_qeq5k")
+
+[node name="ExitZone" type="Area3D" parent="Building/CSGBox3D79" unique_id=1112173823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.8579903)
+script = ExtResource("12_5topm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building/CSGBox3D79/ExitZone" unique_id=1259928502]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 3.2817612)
+shape = SubResource("BoxShape3D_4laf0")
 
 [node name="Doors" type="Node3D" parent="." unique_id=1278169935]
 
