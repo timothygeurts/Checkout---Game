@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://d35jdfd4sax2m" path="res://Scene/Exit_Button.gd" id="4_uyvy5"]
 [ext_resource type="Shader" uid="uid://cx85wuoiaj4ox" path="res://Scene/psx.gdshader" id="4_yf7ie"]
 [ext_resource type="Shader" uid="uid://d1q8c3tvlosff" path="res://Scene/vhs.gdshader" id="5_uyvy5"]
-[ext_resource type="AudioStream" uid="uid://d0d7klx64i0a7" path="res://Music/jorisvermeer-ominous-horror-game-background-418850.mp3" id="7_eslk0"]
+[ext_resource type="AudioStream" uid="uid://b3rmfwg53rslf" path="res://Music/Menu Screen.wav" id="7_eslk0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uyvy5"]
 
