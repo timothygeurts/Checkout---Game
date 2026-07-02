@@ -3166,7 +3166,7 @@ shape = SubResource("BoxShape3D_qeq5k")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=707643354]
 stream = ExtResource("32_4laf0")
-volume_db = -25.0
+volume_db = -15.0
 autoplay = true
 
 [connection signal="area_entered" from="StaticBody3D3/Area3D" to="StaticBody3D3" method="_on_area_3d_area_entered"]
